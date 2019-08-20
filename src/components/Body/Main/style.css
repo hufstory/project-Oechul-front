@@ -22,27 +22,17 @@
     font-weight: normal;
 }
 
-.Main button {
+.Main .Main-button {
     border: 1px solid #61dafb;
-    /* background-color: rgba(97,218,251,255); */
     background-color: #282c34;
     border-radius: 5px;
     color: #61dafb;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 15px;
+    font-size: 1rem;
 }
-
-.Main button:hover {
-    border: 1px solid #61dafb;
-    background-color: #61dafb;
-    color: #282c34;
-}
-
-.Main button:focus {
-    outline: none;
+.Main .Main-button:hover {
+     background-color: #61dafb;
+     border: 1px solid #61dafb;
+     color: #282c34;
 }
 
 .Main .Main-border {
@@ -55,5 +45,5 @@
 }
 
 .Main span {
-    color: #282c34;
+    /*color: #282c34;*/
 }

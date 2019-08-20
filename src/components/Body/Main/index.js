@@ -1,7 +1,11 @@
 import React from 'react';
 import "./style.css";
+import Button from '@material-ui/core/Button';
+import { withStyles } from '@material-ui/core/styles';
 
 const Main = () => {
+
+
     return (
         <div className="Main">
             <header>
@@ -21,11 +25,12 @@ const Main = () => {
                     </h4>
                 </div>
 
-                <a href="http://www.naver.com"><button><b>참여하기</b></button></a>
+                <Button variant="contained" size="medium" className="Main-button" color="primary">
+                    참여하기
+                </Button>
 
-                <div className="Main-border"></div>
+                {/*<div className="Main-border"></div>*/}
             </header>
-            <span>hufstory</span>
         </div>
     )
 }

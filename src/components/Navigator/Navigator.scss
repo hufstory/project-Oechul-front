@@ -1,8 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 .navigator {
+  width: 100%;
+  z-index: 1;
+
   background-color: #282c34;
-  padding-bottom: 5px;
+  padding-bottom: 1vh;
+  position: fixed;
 
   .items {
     display: block;
@@ -12,7 +16,7 @@
     color: white;
     margin: 0 auto;
     max-width: 720px;
-    padding-top:30px;
+    padding: 3vh 0 2vh 0;
 
 
     .title {

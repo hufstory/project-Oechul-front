@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
-import './Navigator.scss';
+import style from './Navigator.scss';
 
 class Navigator extends Component {
     render() {
         return (
-            <div className="navigator">
+            <div className={style.navigator}>
                 <section className="items">
                     <div className="main-nav">
                         <a href="#"><span data-hover="menu_1">menu_1</span></a>

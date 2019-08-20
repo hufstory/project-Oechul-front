@@ -1,8 +1,8 @@
-.Header {
+.Main {
     text-align: center;
 }
 
-.Header header {
+.Main header {
     background-color: #282c34;
     width: 100%;
     min-height: 60vh;
@@ -14,15 +14,15 @@
     color: white;
 }
   
-.Header .title {
+.Main .Main-title {
     color: #61dafb;
 }
 
-.Header .subText {
+.Main .Main-subText {
     font-weight: normal;
 }
 
-.Header button {
+.Main button {
     border: 1px solid #61dafb;
     /* background-color: rgba(97,218,251,255); */
     background-color: #282c34;
@@ -35,17 +35,17 @@
     font-size: 15px;
 }
 
-.Header button:hover {
+.Main button:hover {
     border: 1px solid #61dafb;
     background-color: #61dafb;
     color: #282c34;
 }
 
-.Header button:focus {
+.Main button:focus {
     outline: none;
 }
 
-.Header .border {
+.Main .Main-border {
     position: absolute;
     bottom: 0px;
     height: 50px;
@@ -54,6 +54,6 @@
     border-right: 0px;
 }
 
-.Header span {
+.Main span {
     color: #282c34;
 }

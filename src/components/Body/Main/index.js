@@ -3,16 +3,16 @@ import "./style.css";
 
 const Main = () => {
     return (
-        <div className="Header">
+        <div className="Main">
             <header>
-                <div className="Container">
-                    {/*<h5 className="title">외대생 솔로탈출</h5>*/}
-                    <h1 className="mainText">
+                <div className="Main-Container">
+                    <h5 className="Main-title">외대생 솔로탈출</h5>
+                    <h1 className="Main-Text">
                         외대인 인연 만들기 프로젝트
                     <br/>
                         우리는 학교 안에서 만난다.
                     </h1>
-                    <h4 className="subText">
+                    <h4 className="Main-subText">
                         100% 비밀 보장!
                         <br/>
                         작성된 인적사항과 이상형 정보를 
@@ -23,7 +23,7 @@ const Main = () => {
 
                 <a href="http://www.naver.com"><button><b>참여하기</b></button></a>
 
-                <div className="border"></div>
+                <div className="Main-border"></div>
             </header>
             <span>hufstory</span>
         </div>

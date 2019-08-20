@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 
-import Header from './components/Header';
+import Navigator from './components/Navigator';
 import Body from './components/Body';
 
 function App() {
   return (
     <>
-        <Header/>
+        <Navigator/>
         <Body/>
     </>
   );

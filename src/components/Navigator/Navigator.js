@@ -1,15 +1,10 @@
 import React, {Component} from 'react';
-import './Header.scss';
+import './Navigator.scss';
 
-class Header extends Component {
+class Navigator extends Component {
     render() {
-
-        let style = {
-            "display": "block",
-        };
-
         return (
-            <div className="header">
+            <div className="navigator">
                 <section className="items">
                     <div className="main-nav">
                         <a href="#"><span data-hover="menu_1">menu_1</span></a>
@@ -24,4 +19,4 @@ class Header extends Component {
     }
 }
 
-export default Header;
+export default Navigator;

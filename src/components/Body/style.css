@@ -4,6 +4,7 @@
 
 .Header header {
     background-color: #282c34;
+    width: 100%;
     min-height: 60vh;
     display: flex;
     flex-direction: column;

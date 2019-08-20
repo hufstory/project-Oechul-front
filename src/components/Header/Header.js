@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './Header.css';
+import './Header.scss';
 
 class Header extends Component {
     render() {
@@ -10,7 +10,7 @@ class Header extends Component {
 
         return (
             <div className="header">
-                <section className="items" style={style}>
+                <section className="items">
                     <div className="main-nav">
                         <a href="#"><span data-hover="menu_1">menu_1</span></a>
                         <a href="#"><span data-hover="menu_2">menu_2</span></a>

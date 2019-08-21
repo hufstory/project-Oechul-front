@@ -1,12 +1,20 @@
 import React, {Component} from 'react';
-// import style from 'Footer.scss';
+import style from './Footer.scss';
 
 class Footer extends Component {
     render() {
         return (
-            <div>
-                Footer
-            </div>
+            <footer className="footer-container">
+                <div>
+                    Footer
+                </div>
+                <a href="https://www.facebook.com/storyhufs/"> hufstory facebook </a>
+                |
+                <a href="https://www.facebook.com/storyhufs/"> hufstory facebook </a>
+                |
+                <a href="https://www.facebook.com/storyhufs/"> hufstory facebook </a>
+                <p> Copyright © hufstory </p>
+            </footer>
         );
     }
 }

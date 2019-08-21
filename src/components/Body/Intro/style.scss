@@ -1,0 +1,8 @@
+Paper {
+    margin: 10px;
+    &::after {
+        display: block;
+        border-right: 1px solid red;
+        height: 30px;
+    }
+}

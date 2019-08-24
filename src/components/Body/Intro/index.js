@@ -5,9 +5,13 @@ import "./style.scss";
 
 const style = {
     Paper: {
-        margin: '10px',
-        padding: '10px',
-        textAlign: 'center'
+        height: '15rem',
+        overflow: 'hidden',
+        margin: '30px',
+        marginBottom: "30px",
+        padding: '20px',
+        textAlign: 'center',
+        boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)'
     },
     bar: {
     }
@@ -18,7 +22,7 @@ const Intro = () => {
         <>
             <Grid 
                 container 
-                spacing={3}
+                spacing={2}
                 direction="row"
                 justify="space-around"
                 alignItems="center"

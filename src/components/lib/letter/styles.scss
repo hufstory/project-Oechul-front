@@ -1,0 +1,59 @@
+$svg-values: (
+  (1, 547px, 547px),
+  (2, 494px, 494px, 0.3s),
+  (3, 417px, 417px, 0.3s),
+  (4, 533px, 533px, 0.3s),
+  (5, 363px, 363px, 0.3s),
+  (6, 527px, 527px, 0.3s),
+  (7, 563px, 563px, 0.3s),
+  (8, 382px, 382px, 0.3s),
+);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(32, 35, 48);
+}
+
+#logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fill 0.5s ease forwards 3s;
+    
+    @each $iter, $stroke-dasharray, $stroke-dashoffset, $animation-delay in $svg-values {
+        & path:nth-child(#{$iter}){
+            stroke-dasharray: $stroke-dasharray;
+            stroke-dashoffset: $stroke-dashoffset;
+            animation: line-anim 2s ease forwards $animation-delay;
+        }
+    }
+}
+
+@mixin svg-animation($stroke-dasharray, $stroke-dashoffset, $animation-delay: 0s) {
+    stroke-dasharray: $stroke-dasharray;
+    stroke-dashoffset: $stroke-dashoffset;
+    animation: line-anim 2s ease forwards $animation-delay;
+}
+
+@keyframes line-anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill{
+    from{
+        fill: transparent;
+    }
+    to{
+        fill: white;
+    }
+}

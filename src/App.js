@@ -10,9 +10,9 @@ function App() {
   return (
     <>
       <Letter/>
-        {/* <Navigator/>
-        <Body/>
-        <Footer/> */}
+      <Navigator/>
+      <Body/>
+      <Footer/>
     </>
   );
 }

@@ -1,10 +1,6 @@
 import React, {Component} from 'react';
 import './styles.scss';
 
-const svg = {
-    'h': "M81.5625 107H67.9922V59.6797H16.3828V107H2.88281V4.625H16.3828V48.6406H67.9922V4.625H81.5625V107Z"
-};
-
 class Letter extends Component {
     render() {
         return (

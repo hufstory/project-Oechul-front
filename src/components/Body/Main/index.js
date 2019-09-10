@@ -1,13 +1,13 @@
 import React from 'react';
 import "./style.scss";
 import Button from '@material-ui/core/Button';
-import { withStyles } from '@material-ui/core/styles';
+import "./test";
 
 const Main = () => {
 
 
     return (
-        <div className="Main">
+        <div id="c" className="Main">
             <header>
                 <div className="Main-Container">
                     {/*<h5 className="Main-title">외대생 솔로탈출</h5>*/}

@@ -26,6 +26,7 @@ const Intro = () => {
                 direction="row"
                 justify="space-around"
                 alignItems="center"
+                id="info"
             >
               <Grid item xs={12} sm={12} md={4}>
                 <Paper style={style.Paper}>

@@ -1,13 +1,13 @@
 import React from 'react';
 import "./style.scss";
 import Button from '@material-ui/core/Button';
-import "./test";
+
 
 const Main = () => {
 
 
     return (
-        <div id="c" className="Main">
+        <div id="main" className="Main">
             <header>
                 <div className="Main-Container">
                     {/*<h5 className="Main-title">외대생 솔로탈출</h5>*/}
@@ -29,7 +29,6 @@ const Main = () => {
                     참여하기
                 </Button>
 
-                {/*<div className="Main-border"></div>*/}
             </header>
         </div>
     )

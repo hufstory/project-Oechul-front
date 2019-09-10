@@ -20,23 +20,23 @@ $svg-values: (
     height: 100vh;
     background-color: #282c34;
 
-    animation: loadbg-anim 1s ease-out forwards 4s;
+    animation: loadbg-anim 1s ease-out forwards 1.5s;
 }
 
 #logo {
     position: fixed;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
     
-    animation: fill 0.5s ease forwards 3s;
+    animation: fill 0.5s ease forwards 1s;
     
     @each $iter, $stroke-dasharray, $stroke-dashoffset, $animation-delay in $svg-values {
         & path:nth-child(#{$iter}){
             stroke-dasharray: $stroke-dasharray;
             stroke-dashoffset: $stroke-dashoffset;
-            animation: line-anim 2s ease forwards $animation-delay;
+            animation: line-anim 1s ease forwards $animation-delay;
         }
     }
 }
@@ -44,7 +44,7 @@ $svg-values: (
 @mixin svg-animation($stroke-dasharray, $stroke-dashoffset, $animation-delay: 0s) {
     stroke-dasharray: $stroke-dasharray;
     stroke-dashoffset: $stroke-dashoffset;
-    animation: line-anim 2s ease forwards $animation-delay;
+    animation: line-anim 1s ease forwards $animation-delay;
 }
 
 @keyframes loadbg-anim {
@@ -68,6 +68,6 @@ $svg-values: (
         width: 100px;
         height: 20px;
         top: 4.5%;
-        left: 70px;
+        left: 27%;
     }
 }

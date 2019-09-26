@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/hufstory/project-Oechul-front/static/css/main.a8664795.chunk.css",
-    "main.js": "/hufstory/project-Oechul-front/static/js/main.62dc6f62.chunk.js",
-    "main.js.map": "/hufstory/project-Oechul-front/static/js/main.62dc6f62.chunk.js.map",
-    "runtime~main.js": "/hufstory/project-Oechul-front/static/js/runtime~main.223b8132.js",
-    "runtime~main.js.map": "/hufstory/project-Oechul-front/static/js/runtime~main.223b8132.js.map",
-    "static/js/2.202a4498.chunk.js": "/hufstory/project-Oechul-front/static/js/2.202a4498.chunk.js",
-    "static/js/2.202a4498.chunk.js.map": "/hufstory/project-Oechul-front/static/js/2.202a4498.chunk.js.map",
-    "index.html": "/hufstory/project-Oechul-front/index.html",
-    "precache-manifest.9659aa38c3a92f08793c8bf304c4cdcc.js": "/hufstory/project-Oechul-front/precache-manifest.9659aa38c3a92f08793c8bf304c4cdcc.js",
-    "service-worker.js": "/hufstory/project-Oechul-front/service-worker.js",
-    "static/css/main.a8664795.chunk.css.map": "/hufstory/project-Oechul-front/static/css/main.a8664795.chunk.css.map"
+    "main.css": "/static/css/main.a8664795.chunk.css",
+    "main.js": "/static/js/main.ed6fd33f.chunk.js",
+    "main.js.map": "/static/js/main.ed6fd33f.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.202a4498.chunk.js": "/static/js/2.202a4498.chunk.js",
+    "static/js/2.202a4498.chunk.js.map": "/static/js/2.202a4498.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.d630dd4cd40a347230b041c58cdda432.js": "/precache-manifest.d630dd4cd40a347230b041c58cdda432.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.a8664795.chunk.css.map": "/static/css/main.a8664795.chunk.css.map"
   }
 }

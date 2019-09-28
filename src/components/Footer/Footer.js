@@ -1,12 +1,28 @@
 import React, {Component} from 'react';
-import style from './Footer.scss';
+import styled from 'styled-components'
+
+const FooterComponent = styled.footer`
+    color: white;
+    background-color: black;
+    text-align: center;
+    height: 100px;
+    padding: 10px;
+
+    a {
+        text-decoration: none;
+        color: ${props => props.theme.Blue200}
+        &:hover {
+            color: white;
+        }
+    }
+`
 
 class Footer extends Component {
     render() {
         return (
-            <footer className="footer-container" id="footer">
+            <FooterComponent>
                 <div>
-                    Footer
+                Footer
                 </div>
                 <a href="https://www.facebook.com/storyhufs/"> hufstory facebook </a>
                 |
@@ -14,7 +30,7 @@ class Footer extends Component {
                 |
                 <a href="https://www.facebook.com/storyhufs/"> hufstory facebook </a>
                 <p> Copyright © hufstory </p>
-            </footer>
+            </FooterComponent>
         );
     }
 }

@@ -1,6 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,300,700);
 
 .timer-container {
+  position: absolute;
+  left:0;
+  bottom:0;
   text-align: center;
   box-sizing: border-box;
   width: 100%;
@@ -8,32 +11,20 @@
   padding: 20px;
   font-family: "Quicksand", sans-serif;
   background-color: #1c1c1c;
-
+  
   #timer-content {
     max-width: 600px;
     min-height: 24px;
     margin: 0 auto;
     text-align: center;
 
-    .timer-title {
-      color: white;
-      font-size: 4rem;
-      text-transform: uppercase;
-      padding-bottom: 0px;
-      margin-bottom: 0px;
-
-      span {
-        font-size: 4rem;
-        // cursor: pointer;
-      }
-    }
-
     p {
       color: #e6dbae;
-      font-size: 1.5rem;
+      font-size: 1.25rem;
+      font-weight: 400;
       margin: 0 auto;
       padding: 0;
-      letter-spacing: 0.5rem;
+      letter-spacing: 0.2rem;
       text-transform: uppercase;
     
       &:last-child {
@@ -42,19 +33,6 @@
         margin: 3em auto;
         padding: 0;
         letter-spacing: 0.1rem;
-
-        >a {
-            text-decoration: none;
-            color: inherit;
-            -moz-transition: all 0.2s ease-in;
-            -o-transition: all 0.2s ease-in;
-            -webkit-transition: all 0.2s ease-in;
-            transition: all 0.2s ease-in;
-
-            &:hover {
-                color: #fff;
-            }
-        }
       }
     }
 

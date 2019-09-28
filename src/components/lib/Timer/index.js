@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './styles.scss';
+// 'ssokor400', 'Nanum Gothic','Malgun Gothic','돋움','dotum','AppleGothic', Helvetica, Arial, Sans-Serif;
 
 const second = 1000,
       minute = second * 60,
@@ -24,10 +25,7 @@ class Timer extends Component {
             <>
               <div className='timer-container'>
                 <div id='timer-content'>
-                  <div className='timer-title'>
-                    <span>Hufstory</span>
-                  </div>
-                  <p>hufstory timer</p>
+                  <p>2019년 10월 24일-10월 30일, 한국외국어대학교</p>
                   <section>
                     <ul id='timer-countdown'>
                       <li><span className='timer-number' id='days'></span>
@@ -44,7 +42,6 @@ class Timer extends Component {
                       </li>
                     </ul>
                   </section>
-                  <p>Click here for <a href="#" target="_blank">more infomation</a></p>
                 </div>
               </div>
             </>

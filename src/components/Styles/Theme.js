@@ -4,6 +4,8 @@ const BORDER_RADIUS = "4px"
 export default {
     // Identity color
     // https://app.zeplin.io/project/5d5ab607f4255751f342d5fa/screen/5d5add04e0f07c9bf9381a91
+    LightBlue300: '#0098ef',
+
     Blue100: '#C7E7FB',
     Blue200: '#92CCFE',
     Blue300: '#68B6E7',

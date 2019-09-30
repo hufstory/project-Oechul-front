@@ -1,19 +1,24 @@
 .Main {
-    $deep-blue: #282c34 !default;
-    $blue: #61dafb !default;
-
+    $deep-blue: #0098ef !default;
+    $blue: #085689 !default;
+    padding: 7vh 0 0 0;
     text-align: center;
-    
+    background-image: url("./1.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+
     header {
-        background-color: $deep-blue;
+        // background-color: $deep-blue;
         width: 100%;
         min-height: 60vh;
+        padding: 0 0 33vh 0;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         font-size: calc(10px + 2vmin);
         color: white;
+        word-break: keep-all;
     }
     .Main-title {
         color: $blue;

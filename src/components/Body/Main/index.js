@@ -2,15 +2,12 @@ import React from 'react';
 import "./style.scss";
 import Button from '@material-ui/core/Button';
 
-
 const Main = () => {
-
-
     return (
         <div id="main" className="Main">
             <header>
                 <div className="Main-Container">
-                    {/*<h5 className="Main-title">외대생 솔로탈출</h5>*/}
+                    {/* <h5 className="Main-title">외대생 솔로탈출</h5> */}
                     <h1 className="Main-Text">
                         외대인 인연 만들기 프로젝트
                     <br/>

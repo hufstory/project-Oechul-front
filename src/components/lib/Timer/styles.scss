@@ -19,14 +19,15 @@
     text-align: center;
 
     p {
-      color: #e6dbae;
+      color: #fff;
       font-size: 1.25rem;
       font-weight: 400;
       margin: 0 auto;
       padding: 0;
       letter-spacing: 0.2rem;
       text-transform: uppercase;
-    
+      word-break: keep-all;
+
       &:last-child {
         font-size: 0.75rem;
         font-weight: 700;
@@ -37,7 +38,7 @@
     }
 
     section {
-      color: #fff;
+      color: #c7e7fb;
       margin: 0 auto;
       line-height: 24px;
       font-size: 1rem;

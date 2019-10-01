@@ -10,41 +10,44 @@ const cx = classname.bind(styles);
 class Count extends Component {
     render() {
         return (
-            <div className={cx('count')}>
+            <div className={cx('count')} id="count">
 
-                <div className={cx('title')}>실시간 현황</div>
+                <div className={cx('title')}>Realtime Count</div>
 
                 <Grid
                     container
                     justify="center">
-                    <Box
-                        boxShadow={1}
-                        bgcolor="background.paper"
-                        m={1}
-                        p={1}
-                        style={{ width: '8rem', height: '5rem' }}>
-                        count 1
-                    </Box>
+                        
+                    {/*<Box*/}
+                    {/*    boxShadow={1}*/}
+                    {/*    bgcolor="background.paper"*/}
+                    {/*    m={1}*/}
+                    {/*    p={1}*/}
+                    {/*    className={cx('box')}>*/}
 
-                    <Box
-                        boxShadow={2}
-                        bgcolor="background.paper"
-                        m={1}
-                        p={1}
-                        style={{ width: '8rem', height: '5rem' }}>
-                        count 2
-                    </Box>
+                    {/*    <div className={cx('countBox')}>*/}
+                    {/*        sadfa*/}
+                    {/*    </div>*/}
+                    {/*</Box>*/}
 
-                    <Box
-                        boxShadow={3}
-                        bgcolor="background.paper"
-                        m={1}
-                        p={1}
-                        style={{ width: '8rem', height: '5rem' }}>
-                        count 3
-                    </Box>
+                    {/*<Box*/}
+                    {/*    boxShadow={2}*/}
+                    {/*    bgcolor="background.paper"*/}
+                    {/*    m={1}*/}
+                    {/*    p={1}*/}
+                    {/*    className={cx('box')}>*/}
+                    {/*</Box>*/}
+
+                    {/*<Box*/}
+                    {/*    boxShadow={3}*/}
+                    {/*    bgcolor="background.paper"*/}
+                    {/*    m={1}*/}
+                    {/*    p={1}*/}
+                    {/*    className={cx('box')}>*/}
+                    {/*</Box>*/}
                 </Grid>
 
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
                 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
                 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
             </div>

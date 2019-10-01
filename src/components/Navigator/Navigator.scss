@@ -1,12 +1,12 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 .navigator {
   width: 100%;
-  z-index: 1;
-
-  background-color: #282c34;
-  padding-bottom: 1vh;
   position: fixed;
+  z-index: 1;
+  background-color: #053555;
+  padding-bottom: 2vh;
+  scroll-behavior: smooth;
 
   .items {
     display: block;
@@ -30,10 +30,10 @@
         display: inline-block;
         text-decoration:none;
         color:white;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Roboto', sans-serif;
         text-transform: uppercase;
         font-size: 1rem;
-        font-weight:400;
+        font-weight:600;
         margin:0 20px;
         height: 20px;
         overflow: hidden;

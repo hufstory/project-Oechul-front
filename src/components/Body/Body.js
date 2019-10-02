@@ -4,6 +4,7 @@ import Main from './Main';
 import Count from './Count';
 import Intro from './Intro';
 import Timer from '../lib/Timer'
+import Address from './Adress';
 // import './Body.scss';
 
 class Body extends Component {
@@ -13,8 +14,8 @@ class Body extends Component {
                 <Main/>
                 <Timer/>
                 <Count/>
-                <br/>
                 <Intro/>
+                <Address/>
             </>
         );
     }

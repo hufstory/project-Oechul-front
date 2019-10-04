@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <ThemeProvider theme={Theme}>
-        <SideBox/>
+        {/*<SideBox/>*/}
         <Letter/>
         <Navigator/>
         <Body/>

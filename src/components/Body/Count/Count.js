@@ -3,7 +3,7 @@ import styles from './Count.scss';
 import classname from 'classnames/bind';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
-
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const cx = classname.bind(styles);
 
@@ -12,41 +12,10 @@ class Count extends Component {
         return (
             <div className={cx('count')} id="count">
 
-                <div className={cx('title')}>Realtime Count</div>
-
-                <Grid
-                    container
-                    justify="center">
-                        
-                    {/*<Box*/}
-                    {/*    boxShadow={1}*/}
-                    {/*    bgcolor="background.paper"*/}
-                    {/*    m={1}*/}
-                    {/*    p={1}*/}
-                    {/*    className={cx('box')}>*/}
-
-                    {/*    <div className={cx('countBox')}>*/}
-                    {/*        sadfa*/}
-                    {/*    </div>*/}
-                    {/*</Box>*/}
-
-                    {/*<Box*/}
-                    {/*    boxShadow={2}*/}
-                    {/*    bgcolor="background.paper"*/}
-                    {/*    m={1}*/}
-                    {/*    p={1}*/}
-                    {/*    className={cx('box')}>*/}
-                    {/*</Box>*/}
-
-                    {/*<Box*/}
-                    {/*    boxShadow={3}*/}
-                    {/*    bgcolor="background.paper"*/}
-                    {/*    m={1}*/}
-                    {/*    p={1}*/}
-                    {/*    className={cx('box')}>*/}
-                    {/*</Box>*/}
-                </Grid>
-
+            <ScrollAnimation animateIn='fadeIn'
+                animateOnce={true}>
+                <div className={cx('title')}>봄 외출 참여인원 530명, 가을에는?</div>
+            </ScrollAnimation>
                 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
                 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
                 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>

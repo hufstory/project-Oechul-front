@@ -1,3 +1,5 @@
+@import '../../../utils';
+
 $svg-values: (
   (1, 547px, 547px),
   (2, 494px, 494px, 0.3s),
@@ -41,6 +43,17 @@ $svg-values: (
     }
 }
 
+@include media("<large"){
+    #logo {
+        width: 400px;
+    }
+}
+@include media("<medium"){
+    #logo {
+        width: 200px;
+    }
+}
+
 @mixin svg-animation($stroke-dasharray, $stroke-dashoffset, $animation-delay: 0s) {
     stroke-dasharray: $stroke-dasharray;
     stroke-dashoffset: $stroke-dashoffset;
@@ -69,5 +82,34 @@ $svg-values: (
         height: 20px;
         top: 4.5%;
         left: 27%;
+    }
+}
+
+@include media("<large") {
+    @keyframes fill{
+        from{
+            fill: transparent;
+        }
+        to{
+            fill: white;
+            width: 100px;
+            height: 20px;
+            top: 4.5%;
+            left: 27%;
+        }
+    }
+}
+@include media("<medium") {
+    @keyframes fill{
+        from{
+            fill: transparent;
+        }
+        to{
+            fill: white;
+            width: 100px;
+            height: 20px;
+            top: 5.8%;
+            left: 20%;
+        }
     }
 }

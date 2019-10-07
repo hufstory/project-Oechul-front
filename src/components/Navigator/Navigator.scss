@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import '../../utils';
 
 .navigator {
   width: 100%;
   position: fixed;
   z-index: 1;
-  background-color: #053555;
+  background-color: #282c34;
   padding-bottom: 2vh;
   scroll-behavior: smooth;
 
@@ -65,8 +65,13 @@
       }
     }
 
+    @include media("<large") {
+      visibility: visible;
+    }
+    @include media("<medium") {
+      visibility: hidden;
+    }
 
   }
-
 }
 

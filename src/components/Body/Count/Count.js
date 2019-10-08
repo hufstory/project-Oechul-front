@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import styles from './Count.scss';
 import classname from 'classnames/bind';
+import TinyCount from "./TinyCount";
 
 
 import Grid from '@material-ui/core/Grid';
@@ -11,6 +12,7 @@ const cx = classname.bind(styles);
 
 class Count extends Component {
     render() {
+
         return (
             <div className={cx('count')} id="count">
 
@@ -18,24 +20,16 @@ class Count extends Component {
 
                 <Grid container className={cx('root')} spacing={2}>
                     <Grid item xs={6} sm={3}>
-                        <div>
-                            <p>남</p>
-                        </div>
+                        <TinyCount title="남" count="132"/>
+                    </Grid>
+                    <Grid className={cx('grid2')} item xs={6} sm={3} >
+                        <TinyCount title="여" count="62"/>
                     </Grid>
                     <Grid item xs={6} sm={3}>
-                        <div>
-                            <p>여</p>
-                        </div>
+                        <TinyCount title="서울" count="53"/>
                     </Grid>
                     <Grid item xs={6} sm={3}>
-                        <div>
-                            <p>서울</p>
-                        </div>
-                    </Grid>
-                    <Grid item xs={6} sm={3}>
-                        <div>
-                            <p>글로벌</p>
-                        </div>
+                        <TinyCount title="글로벌" count="141"/>
                     </Grid>
                 </Grid>
             </div>

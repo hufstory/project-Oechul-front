@@ -1,1 +1,1 @@
-export { default } from './tiny_count';
+export { default } from './TinyCount';

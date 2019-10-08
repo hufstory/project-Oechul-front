@@ -18,7 +18,7 @@ const style = {
 
 const Intro = () => {
     return (
-        <div className="intro">
+        <div className="intro" id="info">
             <Grid
                 container
             >

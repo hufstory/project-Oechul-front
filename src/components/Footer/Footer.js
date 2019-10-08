@@ -20,7 +20,7 @@ const FooterComponent = styled.footer`
 class Footer extends Component {
     render() {
         return (
-            <FooterComponent>
+            <FooterComponent id="footer">
                 <div>
                 Footer
                 </div>

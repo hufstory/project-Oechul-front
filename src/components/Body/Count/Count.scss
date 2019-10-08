@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import '../../../utils';
 
 .count {
   padding: 10vh 0 5vh 0;
-  background-color: #E6E6E6;
+  background-color: #F7F7F7;
 
 
 
@@ -13,6 +14,17 @@
     color: #000000;
     font-family: 'Roboto', sans-serif;
     font-weight:600;
+  }
+
+  @include media("<medium"){
+    .title{
+      font-size: 1.5rem;
+      text-align: center;
+      padding-bottom: 2vh;
+      color: #000000;
+      font-family: 'Roboto', sans-serif;
+      font-weight:600;
+    }
   }
 
   .box {
@@ -28,6 +40,19 @@
     }
   }
 
+
+  .root {
+    //flexGrow: 1;
+    margin: 0 0 0 0 ;
+    //flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+
+  }
+
+  .paper {
+    textAlign: 'center';
+  }
 
 
 }

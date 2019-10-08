@@ -13,10 +13,10 @@ let countDown = new Date('Oct 24, 2019 00:00:00').getTime(),
     let now = new Date().getTime(),
         distance = countDown - now;
 
-    // document.getElementById('days').innerText = Math.floor(distance / (day))
-    // document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour))
-    // document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute))
-    // document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second)
+    document.getElementById('days').innerText = Math.floor(distance / (day))
+    document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour))
+    document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute))
+    document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second)
     }, second)
 
 class Timer extends Component {
@@ -25,7 +25,7 @@ class Timer extends Component {
             <>
               <div className='timer-container'>
                 <div id='timer-content'>
-                  <p>2019년 10월 24일-10월 30일, 한국외국어대학교</p>
+                  <p>신청 마감까지 남은 시간</p><span>(2019년 10월 24일-10월 30일)</span>
                   <section>
                     <ul id='timer-countdown'>
                       <li><span className='timer-number' id='days'></span>

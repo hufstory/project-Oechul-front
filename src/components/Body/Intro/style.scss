@@ -1,5 +1,7 @@
-Paper {
+.intro {
     word-break: keep-all;
+    background-color: #F7F7F7;
+
     &::after {
         display: block;
         border-right: 1px solid red;

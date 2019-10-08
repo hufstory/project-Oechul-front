@@ -18,7 +18,7 @@ const style = {
 
 const Intro = () => {
     return (
-        <>
+        <div className="intro">
             <Grid
                 container
             >
@@ -54,7 +54,7 @@ const Intro = () => {
                 </Paper>
                 </Grid>
             </Grid>
-        </>
+        </div>
     )
 }
 

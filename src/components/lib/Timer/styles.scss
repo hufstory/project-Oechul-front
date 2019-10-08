@@ -1,7 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,300,700);
+@import '../../../utils';
 
 .timer-container {
-  position: absolute;
+  //position: absolute;
   left:0;
   bottom:0;
   text-align: center;
@@ -20,7 +21,7 @@
 
     p {
       color: #fff;
-      font-size: 1.25rem;
+      font-size: 1.5rem;
       font-weight: 400;
       margin: 0 auto;
       padding: 0;
@@ -36,6 +37,36 @@
         letter-spacing: 0.1rem;
       }
     }
+    span {
+      font-size: 0.9rem;
+      color: #fff;
+    }
+
+    @include media('<medium'){
+      p {
+        color: #fff;
+        font-size: 1.1rem;
+        font-weight: 400;
+        margin: 0 auto;
+        padding: 0;
+        letter-spacing: 0.2rem;
+        text-transform: uppercase;
+        word-break: keep-all;
+
+        &:last-child {
+          font-size: 0.75rem;
+          font-weight: 700;
+          margin: 3em auto;
+          padding: 0;
+          letter-spacing: 0.1rem;
+        }
+      }
+
+      span{
+        font-size: 0.75rem;
+      }
+
+    }
 
     section {
       color: #c7e7fb;
@@ -46,13 +77,30 @@
       
       ul {
         list-style-type: none;
-        margin-bottom: 0;
-        margin-left: 0;
+        width: 100%;
+        padding: 0;
+        align-items: center;
 
         li {
             display: inline-block;
-            margin-right: 2rem;
+            //margin-right: 2rem;
             width: 6rem;
+        }
+      }
+
+      @include media('<medium'){
+        ul {
+          list-style-type: none;
+          display: inline-flex;
+          width: 100%;
+          padding: 0;
+          align-items: center;
+
+          li {
+            display: inline-block;
+            //margin-right: 2rem;
+            width: 6rem;
+          }
         }
       }
 
@@ -77,5 +125,11 @@
     }
 
 
+  }
+}
+
+@include media('<medium'){
+  .timer-container {
+    padding: 20px 20px 0 20px;
   }
 }

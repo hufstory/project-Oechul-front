@@ -11,7 +11,7 @@ class Body extends Component {
         return (
             <>
                 <Main/>
-                {/*<Timer/>*/}
+                <Timer/>
                 <Count/>
                 <br/>
                 <Intro/>

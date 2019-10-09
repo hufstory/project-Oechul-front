@@ -18,10 +18,14 @@
         font-size: calc(10px + 2vmin);
         color: white;
 
+        @include media("<medium"){
+            min-height: 50vh;
+        }
+
         .Main-Container{
             @include media("<medium"){
                 .Main-Text{
-                    font-size: 4vh;
+                    font-size: 1.8rem;
                 }
                 .Main-subText{
 

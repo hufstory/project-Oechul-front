@@ -1,6 +1,10 @@
+@import '../../../utils';
+
 .intro {
     word-break: keep-all;
     background-color: #F7F7F7;
+    padding-left: 7vh;
+    padding-right: 7vh;
 
     &::after {
         display: block;
@@ -8,3 +12,10 @@
         height: 30px;
     }
 }
+
+@include media("<medium"){
+    .intro{
+        padding: 0;
+    }
+}
+

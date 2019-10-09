@@ -14,7 +14,7 @@ function App() {
     <>
       <ThemeProvider theme={Theme}>
         {/*<SideBox/>*/}
-        <Letter/>
+        {/*<Letter/>*/}
         <Navigator/>
         <Body/>
         <Footer/>

@@ -14,7 +14,7 @@ class Navigator extends Component {
                         <a href="#info"><span data-hover="info">info</span></a>
                         <a href="#footer"><span data-hover="footer">footer</span></a>
                     </div>
-                    {/*<a herf="#" className={cx('title')}>HOME</a>*/}
+                    <a herf="#" className={cx('title')}>HUFSTORY</a>
                 </section>
             </div>
         );

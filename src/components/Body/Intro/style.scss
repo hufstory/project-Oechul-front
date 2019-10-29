@@ -1,8 +1,30 @@
+<<<<<<< HEAD
 Paper {
     margin: 10px;
+=======
+@import '../../../utils';
+
+.intro {
+    word-break: keep-all;
+    background-color: #F7F7F7;
+    padding-left: 7vh;
+    padding-right: 7vh;
+
+>>>>>>> woongbi
     &::after {
         display: block;
         border-right: 1px solid red;
         height: 30px;
     }
+<<<<<<< HEAD
 }
+=======
+}
+
+@include media("<medium"){
+    .intro{
+        padding: 0;
+    }
+}
+
+>>>>>>> woongbi

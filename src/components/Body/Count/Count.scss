@@ -1,9 +1,51 @@
+@import '../../../utils';
+
 .count {
-  padding: 5vh 0 5vh 0;
+  padding: 10vh 0 5vh 0;
+  background-color: #F7F7F7;
 
   .title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
-    padding-bottom: 2vh;
+    padding-bottom: 3vh;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-weight:600;
   }
+
+  @include media("<medium"){
+    .title{
+      font-size: 1.5rem;
+      text-align: center;
+      padding-bottom: 2vh;
+      color: #000000;
+      font-family: 'Roboto', sans-serif;
+      font-weight:600;
+    }
+  }
+
+  .root {
+    margin: 0 0 0 0;
+    padding-right: 5vh;
+    padding-left: 5vh;
+    width: 100%;
+
+    .grid2 {
+      border-right: dashed #282c34;
+    }
+    //
+    //@include media("<medium"){
+    //  .grid2{
+    //    border-right: none;
+    //  }
+    //}
+    //@include media("<large"){
+    //  .grid2 {
+    //    border-right: dashed #282c34;
+    //  }
+    //}
+  }
+
+
+
 }

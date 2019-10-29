@@ -4,46 +4,17 @@ import classNames from 'classnames/bind';
 const cx = classNames.bind(style);
 
 class Navigator extends Component {
-
-
-
     render() {
-        // let didScroll;
-        //
-        // (window).scroll(function(event){
-        //     didScroll = true;
-        // });
-        //
-        // setInterval(function(){
-        //    if(didScroll){
-        //        hasScrolled();
-        //        didScroll = false;
-        //    }
-        // }, 250);
-        //
-        //
-        // const delta = 5;
-        // const navberHeight = document.getElementById("navber").clientHeight;
-        // const lastScrollTop = 0;
-        //
-        //
-        // function hasScrolled() {
-        //
-        //     const st = (this).scrollTop;
-        //     if (Math.abs(lastScrollTop - st) <= delta)
-        //         return;
-        // }
-
         return (
             <div id="navber" className={cx('navigator')}>
                 <section className={cx('items')}>
                     <div className={cx('main-nav')}>
-                        <a href="#"><span data-hover="menu_1">menu_1</span></a>
-                        <a href="#"><span data-hover="menu_2">menu_2</span></a>
-                        <a href="#"><span data-hover="menu_3">menu_3</span></a>
-                        <a href="#"><span data-hover="menu_4">menu_4</span></a>
+                        <a href="#main"><span data-hover="main">main</span></a>
+                        <a href="#count"><span data-hover="real time count">real time count</span></a>
+                        <a href="#info"><span data-hover="info">info</span></a>
+                        <a href="#footer"><span data-hover="footer">footer</span></a>
                     </div>
-                    <a herf="#" className={cx('title')}>HOME</a>
+                    <a herf="#" className={cx('title')}>HUFSTORY</a>
                 </section>
             </div>
         );

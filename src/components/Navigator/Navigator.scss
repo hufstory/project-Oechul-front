@@ -1,39 +1,63 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import '../../utils';
 
 .navigator {
   width: 100%;
-  z-index: 1;
-
-  background-color: #282c34;
-  padding-bottom: 1vh;
   position: fixed;
+  z-index: 1;
+  background-color: #282c34;
+  //padding-bottom: 1vh;
+  scroll-behavior: smooth;
 
   .items {
     display: block;
     flex-direction: column;
-    align-items: start;
+    align-items: end;
     justify-content: center;
     color: white;
     margin: 0 auto;
     max-width: 720px;
-    padding: 3vh 0 2vh 0;
+
+    padding: 2vh 0 2vh 0;
 
 
     .title {
-      font-size: 1rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+
+      @include media("<large") {
+        font-size: 1.5rem;
+        padding: 0;
+      }
+      @include media("<medium") {
+        font-size: 1.3rem;
+        padding-left: 3vh;
+      }
     }
 
     .main-nav {
       float: right;
+      height: 100%;
+      padding-top: 0.5vh;
+
+      @include media("<large") {
+        visibility: visible;
+        position: static;
+        z-index: -1;
+      }
+      @include media("<medium") {
+        visibility: collapse;
+        position: fixed;
+        z-index: 2;
+      }
 
       a{
         display: inline-block;
         text-decoration:none;
         color:white;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Roboto', sans-serif;
         text-transform: uppercase;
         font-size: 1rem;
-        font-weight:400;
+        font-weight:600;
         margin:0 20px;
         height: 20px;
         overflow: hidden;
@@ -64,6 +88,8 @@
         -moz-transform: translateY(30px);
       }
     }
+
+
 
 
   }

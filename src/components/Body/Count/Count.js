@@ -1,52 +1,40 @@
 import React, {Component} from 'react';
 import styles from './Count.scss';
 import classname from 'classnames/bind';
+import TinyCount from "./TinyCount";
+import ScrollAnimation from 'react-animate-on-scroll';
+
 import Grid from '@material-ui/core/Grid';
-import Box from '@material-ui/core/Box';
+import Paper from '@material-ui/core/Paper';
 
 
 const cx = classname.bind(styles);
 
 class Count extends Component {
     render() {
+
         return (
-            <div className={cx('count')}>
+            <div className={cx('count')} id="count">
+                <ScrollAnimation
+                    animateIn='fadeIn'
+                    animateOnce={true}>
+                    <div className={cx('title')}>봄 외출 참여인원 530명, 가을에는?</div>
 
-                <div className={cx('title')}>실시간 현황</div>
-
-                <Grid
-                    container
-                    justify="center">
-                    <Box
-                        boxShadow={1}
-                        bgcolor="background.paper"
-                        m={1}
-                        p={1}
-                        style={{ width: '8rem', height: '5rem' }}>
-                        count 1
-                    </Box>
-
-                    <Box
-                        boxShadow={2}
-                        bgcolor="background.paper"
-                        m={1}
-                        p={1}
-                        style={{ width: '8rem', height: '5rem' }}>
-                        count 2
-                    </Box>
-
-                    <Box
-                        boxShadow={3}
-                        bgcolor="background.paper"
-                        m={1}
-                        p={1}
-                        style={{ width: '8rem', height: '5rem' }}>
-                        count 3
-                    </Box>
-                </Grid>
-
-                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                    <Grid container className={cx('root')} spacing={2}>
+                        <Grid item xs={6} sm={3}>
+                            <TinyCount title="남" count="132"/>
+                        </Grid>
+                        <Grid className={cx('grid2')} item xs={6} sm={3} >
+                            <TinyCount title="여" count="62"/>
+                        </Grid>
+                        <Grid item xs={6} sm={3}>
+                            <TinyCount title="서울" count="53"/>
+                        </Grid>
+                        <Grid item xs={6} sm={3}>
+                            <TinyCount title="글로벌" count="141"/>
+                        </Grid>
+                    </Grid>
+                </ScrollAnimation>
             </div>
         );
     }

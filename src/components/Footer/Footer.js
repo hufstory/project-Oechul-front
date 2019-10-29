@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import styled from 'styled-components'
 
+
 const FooterComponent = styled.footer`
     color: white;
     background-color: black;

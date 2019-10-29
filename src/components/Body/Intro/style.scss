@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-Paper {
-    margin: 10px;
-=======
 @import '../../../utils';
 
 .intro {
@@ -10,15 +6,11 @@ Paper {
     padding-left: 7vh;
     padding-right: 7vh;
 
->>>>>>> woongbi
     &::after {
         display: block;
         border-right: 1px solid red;
         height: 30px;
     }
-<<<<<<< HEAD
-}
-=======
 }
 
 @include media("<medium"){
@@ -26,5 +18,3 @@ Paper {
         padding: 0;
     }
 }
-
->>>>>>> woongbi

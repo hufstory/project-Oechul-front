@@ -1,7 +1,4 @@
 import React, {Component} from 'react';
-<<<<<<< HEAD
-import style from './Footer.scss';
-=======
 import styled from 'styled-components'
 
 const FooterComponent = styled.footer`
@@ -19,20 +16,13 @@ const FooterComponent = styled.footer`
         }
     }
 `
->>>>>>> woongbi
 
 class Footer extends Component {
     render() {
         return (
-<<<<<<< HEAD
-            <footer className="footer-container">
-                <div>
-                    Footer
-=======
             <FooterComponent id="footer">
                 <div>
                 Footer
->>>>>>> woongbi
                 </div>
                 <a href="https://www.facebook.com/storyhufs/"> hufstory facebook </a>
                 |
@@ -40,11 +30,8 @@ class Footer extends Component {
                 |
                 <a href="https://www.facebook.com/storyhufs/"> hufstory facebook </a>
                 <p> Copyright © hufstory </p>
-<<<<<<< HEAD
-            </footer>
-=======
+
             </FooterComponent>
->>>>>>> woongbi
         );
     }
 }

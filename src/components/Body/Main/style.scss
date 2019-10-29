@@ -1,20 +1,12 @@
-<<<<<<< HEAD
-=======
 @import '../../../utils';
 
->>>>>>> woongbi
 .Main {
     $deep-blue: #282c34 !default;
     $blue: #61dafb !default;
 
-<<<<<<< HEAD
-    text-align: center;
-    
-=======
     padding: 0 0 0 0;
     text-align: center;
 
->>>>>>> woongbi
     header {
         background-color: $deep-blue;
         width: 100%;
@@ -25,8 +17,6 @@
         justify-content: center;
         font-size: calc(10px + 2vmin);
         color: white;
-<<<<<<< HEAD
-=======
 
         @include media("<medium"){
             min-height: 50vh;
@@ -43,7 +33,6 @@
             }
 
         }
->>>>>>> woongbi
     }
     .Main-title {
         color: $blue;
@@ -57,18 +46,13 @@
         border-radius: 5px;
         color: $blue;
         font-size: 1rem;
-<<<<<<< HEAD
-=======
         z-index: 0;
->>>>>>> woongbi
         &:hover {
             background-color: $blue;
             border: 1px solid $blue;
             color: $deep-blue;
        }
     }
-<<<<<<< HEAD
-=======
 
     @include media("<medium"){
         .Main-button {
@@ -88,7 +72,6 @@
             }
         }
     }
->>>>>>> woongbi
     .Main-border {
         position: absolute;
         bottom: 0px;

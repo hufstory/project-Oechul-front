@@ -15,7 +15,9 @@ class Count extends Component {
 
         return (
             <div className={cx('count')} id="count">
-                <ScrollAnimation animateIn='fadeIn'>
+                <ScrollAnimation
+                    animateIn='fadeIn'
+                    animateOnce={true}>
                     <div className={cx('title')}>봄 외출 참여인원 530명, 가을에는?</div>
 
                     <Grid container className={cx('root')} spacing={2}>

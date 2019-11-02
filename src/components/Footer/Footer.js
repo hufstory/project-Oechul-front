@@ -25,11 +25,11 @@ class Footer extends Component {
                 <div>
                 Footer
                 </div>
-                <a href="https://www.facebook.com/storyhufs/"> hufstory facebook </a>
+                <a href="https://www.facebook.com/storyhufs/posts/1872610396100271"> hufstory facebook </a>
                 |
-                <a href="https://www.facebook.com/storyhufs/"> hufstory facebook </a>
+                <a href="https://hashtagen.com/people/hufstory_official"> hufstory instagram </a>
                 |
-                <a href="https://www.facebook.com/storyhufs/"> hufstory facebook </a>
+                <a href="https://www.facebook.com/storyhufs/"> hufstory kakaotalk </a>
                 <p> Copyright © hufstory </p>
 
             </FooterComponent>

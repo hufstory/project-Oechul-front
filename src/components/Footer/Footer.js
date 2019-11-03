@@ -29,7 +29,7 @@ class Footer extends Component {
                 |
                 <a href="https://hashtagen.com/people/hufstory_official"> hufstory instagram </a>
                 |
-                <a href="https://www.facebook.com/storyhufs/"> hufstory kakaotalk </a>
+                <a href="https://open.kakao.com/o/sy8CRfKb"> hufstory kakaotalk </a>
                 <p> Copyright © hufstory </p>
 
             </FooterComponent>

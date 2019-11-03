@@ -4,20 +4,25 @@ import 'react-vertical-timeline-component/style.min.css'
 import SchoolIcon from '@material-ui/icons/School';
 import WorkIcon from '@material-ui/icons/Work';
 import StarIcon from '@material-ui/icons/Star';
+import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
+import AccessibilityNewIcon from '@material-ui/icons/AccessibilityNew';
+import DoneOutlineIcon from '@material-ui/icons/DoneOutline';
+import EmojiEventsIcon from '@material-ui/icons/EmojiEvents';
+import FavoriteIcon from '@material-ui/icons/Favorite';
 import './style.scss'
 
 class TimeLine extends Component {
     render() {
         return (
             <>
-              <VerticalTimeline className="TimeLime">
+              <VerticalTimeline className="info" id="info">
                 <VerticalTimelineElement
                   className="vertical-timeline-element--work"
                   contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                   contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
                   // date="2011 - present"
                   iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                  icon={<WorkIcon />}
+                  icon={<AccessibilityNewIcon />}
                 >
                   <h3 className="vertical-timeline-element-title">Hufstory</h3>
                   <h4 className="vertical-timeline-element-subtitle">since 2014</h4>
@@ -28,15 +33,15 @@ class TimeLine extends Component {
 
                 <VerticalTimelineElement
                   className="vertical-timeline-element--work"
-                  date="2019 - 11 - 04"
+                  date="November 4 2019"
                   iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                  icon={<WorkIcon />}
+                  icon={<AssignmentIndIcon />}
                 >
                   <h4 className="vertical-timeline-element-subtitle">외대솔로 탈출 및 신입 팀원 모집 공고</h4>
                   <p>
-                    외대 솔로 탈출 일정: 11.04 ~ 11.13 (0월 0일부터 – 0월 0일 까지)
+                    외대 솔로 탈출 일정: 11월 4일 – 11월 13일
                     <br/>
-                    신입 팀원 모집 일정: 11.04 ~ 11.15
+                    신입 팀원 모집 일정: 11월 4일 – 11월 15일
                   </p>
                 </VerticalTimelineElement>
 
@@ -44,7 +49,7 @@ class TimeLine extends Component {
                   className="vertical-timeline-element--work"
                   date="What"
                   iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                  icon={<WorkIcon />}
+                  icon={<DoneOutlineIcon />}
                 >
                   {/* <h3 className="vertical-timeline-element-title">'외대 솔로 탈출'이란?</h3> */}
                   <h4 className="vertical-timeline-element-subtitle">'외대 솔로 탈출'이란?</h4>
@@ -59,7 +64,7 @@ class TimeLine extends Component {
                   className="vertical-timeline-element--work"
                   date="How"
                   iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                  icon={<WorkIcon />}
+                  icon={<DoneOutlineIcon />}
                 >
                   <h4 className="vertical-timeline-element-subtitle">매칭 방식</h4>
                   <p>
@@ -77,7 +82,7 @@ class TimeLine extends Component {
                 >
                   <h4 className="vertical-timeline-element-subtitle">모집 일정</h4>
                   <p>
-                    훕스토리 새로운 개발자 & 디자이너를 모집합니다 &nbsp;&nbsp;&nbsp;
+                    훕스토리 새로운 개발자 & 디자이너를 모집합니다. &nbsp;&nbsp;
                     <a href="https://www.notion.so/2019-7d64b4b8de4c416b9aa32b22580f8e12">Click Me!</a>
                   </p>
                 </VerticalTimelineElement>
@@ -85,8 +90,8 @@ class TimeLine extends Component {
                 <VerticalTimelineElement
                   className="vertical-timeline-element--education"
                   date="November 13 2019"
-                  iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                  icon={<SchoolIcon />}
+                  iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+                  icon={<EmojiEventsIcon />}
                 >
                   <h4 className="vertical-timeline-element-subtitle">외대솔로 탈출 마감</h4>
                 </VerticalTimelineElement>
@@ -94,15 +99,15 @@ class TimeLine extends Component {
                 <VerticalTimelineElement
                   className="vertical-timeline-element--education"
                   date="November 15 2019"
-                  iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                  icon={<SchoolIcon />}
+                  iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+                  icon={<EmojiEventsIcon />}
                 >
                   <h4 className="vertical-timeline-element-subtitle">훕스토리 신입 팀원 모집 마감</h4>
                 </VerticalTimelineElement>
                 
                 <VerticalTimelineElement
-                  iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-                  icon={<StarIcon />}
+                  iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+                  icon={<FavoriteIcon />}
                 />
               </VerticalTimeline>
             </>

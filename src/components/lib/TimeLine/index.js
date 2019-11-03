@@ -4,6 +4,7 @@ import 'react-vertical-timeline-component/style.min.css'
 import SchoolIcon from '@material-ui/icons/School';
 import WorkIcon from '@material-ui/icons/Work';
 import StarIcon from '@material-ui/icons/Star';
+import './style.scss'
 
 class TimeLine extends Component {
     render() {
@@ -14,14 +15,14 @@ class TimeLine extends Component {
                   className="vertical-timeline-element--work"
                   contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                   contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                  date="2011 - present"
+                  // date="2011 - present"
                   iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                   icon={<WorkIcon />}
                 >
-                  <h3 className="vertical-timeline-element-title">Creative Director</h3>
-                  <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+                  <h3 className="vertical-timeline-element-title">Hufstory</h3>
+                  <h4 className="vertical-timeline-element-subtitle">since 2014</h4>
                   <p>
-                    Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+                    훕스토리는 000 입니다
                   </p>
                 </VerticalTimelineElement>
 
@@ -31,10 +32,11 @@ class TimeLine extends Component {
                   iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                   icon={<WorkIcon />}
                 >
-                  <h3 className="vertical-timeline-element-title">외대솔로 탈출</h3>
-                  <h4 className="vertical-timeline-element-subtitle">외대솔로 탈출</h4>
+                  <h4 className="vertical-timeline-element-subtitle">외대솔로 탈출 및 훕스토리 모집 공고</h4>
                   <p>
-                    11.04 ~ 11.15
+                    외대 솔로 탈출 일정: 11.04 ~ 11.11 (0월 0일부터 – 0월 0일 까지)
+                    <br/>
+                    모집 일정: 11.04 ~ 11.15
                   </p>
                 </VerticalTimelineElement>
 
@@ -44,8 +46,8 @@ class TimeLine extends Component {
                   iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                   icon={<WorkIcon />}
                 >
-                  <h3 className="vertical-timeline-element-title">Web Designer</h3>
-                  <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
+                  {/* <h3 className="vertical-timeline-element-title">'외대 솔로 탈출'이란?</h3> */}
+                  <h4 className="vertical-timeline-element-subtitle">'외대 솔로 탈출'이란?</h4>
                   <p>
                   외출, 풀어서 외대생 솔로탈출 프로젝트는 교내 유일 자치기구 훕스토리가 진행하는 프로젝트입니다. 각자가 작성한 이상형을 토대로 하여 이상형과 가까운 분을 매칭해드리는 블라인드 매칭 시스템입니다.
     1학기, 글로벌 캠퍼스에서만 530명이 조금 넘는 학우님들이 신청해주셨습니다
@@ -55,26 +57,11 @@ class TimeLine extends Component {
 
                 <VerticalTimelineElement
                   className="vertical-timeline-element--work"
-                  date="When"
+                  date="How"
                   iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                   icon={<WorkIcon />}
                 >
-                  <h3 className="vertical-timeline-element-title">Web Designer</h3>
-                  <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-                  <p>
-                  0월 0일부터 – 0월 0일 까지.
-    붉게 물드는 단풍과 함께 여러분의 마음도 붉게 물들었으면 좋겠습니다.
-                  </p>
-                </VerticalTimelineElement>
-
-                <VerticalTimelineElement
-                  className="vertical-timeline-element--education"
-                  date="Why"
-                  iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                  icon={<SchoolIcon />}
-                >
-                  <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
-                  <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
+                  <h4 className="vertical-timeline-element-subtitle">매칭 방식</h4>
                   <p>
                   훕스토리의 외출 프로젝트는 14년도에 처음 시작되었습니다.
     몇 년 간 쌓인 내공으로 여러분들에게 더 잘 맞는 이성을 찾아드릴 수 있습니다.!
@@ -84,28 +71,33 @@ class TimeLine extends Component {
 
                 <VerticalTimelineElement
                   className="vertical-timeline-element--education"
-                  date="November 15 2019"
+                  date="About"
                   iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
                   icon={<SchoolIcon />}
                 >
-                  <h3 className="vertical-timeline-element-title">외출 마감</h3>
-                  <h4 className="vertical-timeline-element-subtitle">외출 마감</h4>
+                  <h4 className="vertical-timeline-element-subtitle">모집 일정</h4>
                   <p>
-                    Creative Direction, User Experience, Visual Design
+                    훕스토리 새로운 개발자 & 디자이너를 모집합니다 &nbsp;&nbsp;&nbsp;
+                    <a href="https://www.naver.com/">Click Me!</a>
                   </p>
                 </VerticalTimelineElement>
 
                 <VerticalTimelineElement
                   className="vertical-timeline-element--education"
-                  date="2002 - 2006"
+                  date="November 11 2019"
                   iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
                   icon={<SchoolIcon />}
                 >
-                  <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
-                  <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
-                  <p>
-                    Creative Direction, Visual Design
-                  </p>
+                  <h4 className="vertical-timeline-element-subtitle">외대솔로 탈출 마감</h4>
+                </VerticalTimelineElement>
+
+                <VerticalTimelineElement
+                  className="vertical-timeline-element--education"
+                  date="November 15 2019"
+                  iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+                  icon={<SchoolIcon />}
+                >
+                  <h4 className="vertical-timeline-element-subtitle">훕스토리 모집 마감</h4>
                 </VerticalTimelineElement>
                 
                 <VerticalTimelineElement

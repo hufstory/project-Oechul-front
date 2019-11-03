@@ -4,6 +4,8 @@ import classname from 'classnames/bind';
 import TinyCount from "./TinyCount";
 import ScrollAnimation from 'react-animate-on-scroll';
 import Grid from '@material-ui/core/Grid';
+
+import axios from 'axios';
 const cx = classname.bind(styles);
 
 
@@ -15,18 +17,34 @@ class Count extends Component {
         seoul_female: 0
     };
 
-    componentDidMount() {
-        fetch('/get_count')
-            .then(res => res.json())
-            .then(data => this.setState({
+    getCount = async () => {
+        try {
+            const response = await axios.get('/get_count');
+            const data = response.data;
+            console.log(data);
+            this.setState({
                 global_male: data.global_male,
                 global_female: data.global_female,
                 seoul_male: data.seoul_male,
                 seoul_female: data.seoul_female
-            }));
+            });
+        } catch (e) {
+            console.log(e);
+        }
+    };
+
+    componentDidMount() {
+        this.getCount();
     }
 
     render() {
+        const { global_male, global_female, seoul_female, seoul_male } = this.state;
+        const male = global_male + seoul_male;
+        const female = global_female + seoul_female;
+        const global = global_male + global_female;
+        const seoul = seoul_female + seoul_male;
+
+        console.log({ global_male, global_female, seoul_female, seoul_male });
 
         return (
             <div className={cx('count')} id="count">
@@ -37,16 +55,16 @@ class Count extends Component {
 
                     <Grid container className={cx('root')} spacing={2}>
                         <Grid item xs={6} sm={3}>
-                            <TinyCount title="남" count="132"/>
+                            <TinyCount title="남" count={male}/>
                         </Grid>
                         <Grid className={cx('grid2')} item xs={6} sm={3} >
-                            <TinyCount title="여" count="62"/>
+                            <TinyCount title="여" count={female}/>
                         </Grid>
                         <Grid item xs={6} sm={3}>
-                            <TinyCount title="서울" count="53"/>
+                            <TinyCount title="서울" count={seoul}/>
                         </Grid>
                         <Grid item xs={6} sm={3}>
-                            <TinyCount title="글로벌" count="141"/>
+                            <TinyCount title="글로벌" count={global}/>
                         </Grid>
                     </Grid>
                 </ScrollAnimation>

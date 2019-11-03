@@ -38,7 +38,7 @@ class Timer extends Component {
                         <p className='timer-word'>Minutes</p>
                       </li>
                       <li><span className='timer-number' id='seconds'></span>
-                        <p className='timer-word'>Secounds</p>
+                        <p className='timer-word'>Seconds</p>
                       </li>
                     </ul>
                   </section>

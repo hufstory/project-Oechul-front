@@ -3,14 +3,29 @@ import styles from './Count.scss';
 import classname from 'classnames/bind';
 import TinyCount from "./TinyCount";
 import ScrollAnimation from 'react-animate-on-scroll';
-
 import Grid from '@material-ui/core/Grid';
-import Paper from '@material-ui/core/Paper';
-
-
 const cx = classname.bind(styles);
 
+
 class Count extends Component {
+    state = {
+        global_male: 0,
+        global_female: 0,
+        seoul_male: 0,
+        seoul_female: 0
+    };
+
+    componentDidMount() {
+        fetch('/get_count')
+            .then(res => res.json())
+            .then(data => this.setState({
+                global_male: data.global_male,
+                global_female: data.global_female,
+                seoul_male: data.seoul_male,
+                seoul_female: data.seoul_female
+            }));
+    }
+
     render() {
 
         return (

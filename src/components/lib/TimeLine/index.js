@@ -10,7 +10,7 @@ class TimeLine extends Component {
     render() {
         return (
             <>
-              <VerticalTimeline>
+              <VerticalTimeline className="TimeLime">
                 <VerticalTimelineElement
                   className="vertical-timeline-element--work"
                   contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
@@ -34,7 +34,7 @@ class TimeLine extends Component {
                 >
                   <h4 className="vertical-timeline-element-subtitle">외대솔로 탈출 및 신입 팀원 모집 공고</h4>
                   <p>
-                    외대 솔로 탈출 일정: 11.04 ~ 11.11 (0월 0일부터 – 0월 0일 까지)
+                    외대 솔로 탈출 일정: 11.04 ~ 11.13 (0월 0일부터 – 0월 0일 까지)
                     <br/>
                     신입 팀원 모집 일정: 11.04 ~ 11.15
                   </p>
@@ -84,7 +84,7 @@ class TimeLine extends Component {
 
                 <VerticalTimelineElement
                   className="vertical-timeline-element--education"
-                  date="November 11 2019"
+                  date="November 13 2019"
                   iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
                   icon={<SchoolIcon />}
                 >

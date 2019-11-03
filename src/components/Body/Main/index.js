@@ -15,7 +15,7 @@ const Main = () => {
                                      animateOnce={true}
                                      delay={500}>
                         <h1 className="Main-Text">
-                            외대인 인연 만들기 프로젝트
+                            외대생 솔로탈출 프로젝트
                             <br/>
                             우리는 학교 안에서 만난다.
                         </h1>
@@ -38,9 +38,11 @@ const Main = () => {
                                  animateOut='fadeOut'
                                  animateOnce={true}
                                  delay={1500}>
-                    <Button variant="contained" size="medium" className="Main-button" color="primary">
-                        참여하기
-                    </Button>
+                    <a href="https://docs.google.com/forms/d/18RjhUCAIt_R8_zChPXcrxbcuZZQVQIDjL_fpySoLzaU/edit">
+                        <Button variant="contained" size="medium" className="Main-button" color="primary">
+                            참여하기
+                        </Button>
+                    </a>
                 </ScrollAnimation>
 
             </header>

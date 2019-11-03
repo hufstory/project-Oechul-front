@@ -38,9 +38,11 @@ const Main = () => {
                                  animateOut='fadeOut'
                                  animateOnce={true}
                                  delay={1500}>
-                    <Button variant="contained" size="medium" className="Main-button" color="primary">
-                        참여하기
-                    </Button>
+                    <a href="https://docs.google.com/forms/d/18RjhUCAIt_R8_zChPXcrxbcuZZQVQIDjL_fpySoLzaU/edit">
+                        <Button variant="contained" size="medium" className="Main-button" color="primary">
+                            참여하기
+                        </Button>
+                    </a>
                 </ScrollAnimation>
 
             </header>

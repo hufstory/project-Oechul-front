@@ -3,7 +3,7 @@
 .Main {
     $deep-blue: #282c34 !default;
     $blue: #61dafb !default;
-
+    word-break: keep-all;
     padding: 30px 0 0 0;
     text-align: center;
     font-family: 'Nanum Brush Script', cursive;
@@ -47,7 +47,6 @@
         border-radius: 5px;
         color: $blue;
         font-size: 1rem;
-        word-break: keep-all;
         z-index: 0;
         &:hover {
             background-color: $blue;

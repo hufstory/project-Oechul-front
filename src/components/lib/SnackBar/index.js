@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import './snackbar.css';
-import './snackbar';
 
 function Snackbar(userOptions) {
     var _This = this;

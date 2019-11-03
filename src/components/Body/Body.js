@@ -7,6 +7,7 @@ import Timer from '../lib/Timer';
 import Address from './Address';
 // import './Body.scss';
 import SnackBar from '../lib/SnackBar'
+import TimeLine from '../lib/TimeLine'
 
 class Body extends Component {
     render() {
@@ -16,6 +17,7 @@ class Body extends Component {
                 <Timer/>
                 <Count/>
                 <Intro/>
+                <TimeLine/>
                 <Address/>
                 <SnackBar/>
             </>

@@ -83,7 +83,7 @@ class TimeLine extends Component {
                   <h4 className="vertical-timeline-element-subtitle">모집 일정</h4>
                   <p>
                     훕스토리 새로운 개발자 & 디자이너를 모집합니다. &nbsp;&nbsp;
-                    <a href="https://www.notion.so/2019-7d64b4b8de4c416b9aa32b22580f8e12">Click Me!</a>
+                    <a href="https://www.notion.so/hufstory/2020-7d64b4b8de4c416b9aa32b22580f8e12">Click Me!</a>
                   </p>
                 </VerticalTimelineElement>
 

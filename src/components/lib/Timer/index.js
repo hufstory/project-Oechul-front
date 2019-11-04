@@ -7,7 +7,7 @@ const second = 1000,
       hour = minute * 60,
       day = hour * 24;
 
-let countDown = new Date('Nov 15, 2019 00:00:00').getTime(),
+let countDown = new Date('Nov 14, 2019 00:00:00').getTime(),
     x = setInterval(function() {
 
     let now = new Date().getTime(),
@@ -25,7 +25,7 @@ class Timer extends Component {
             <>
               <div className='timer-container'>
                 <div id='timer-content'>
-                  <p>신청 마감까지 남은 시간</p><span>(2019년 11월 04일-11월 15일)</span>
+                  <p>신청 마감까지 남은 시간</p><span>( 2019년 11월 04일-11월 13일 )</span>
                   <section>
                     <ul id='timer-countdown'>
                       <li><span className='timer-number' id='days'></span>

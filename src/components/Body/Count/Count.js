@@ -19,7 +19,8 @@ class Count extends Component {
 
     getCount = async () => {
         try {
-            const response = await axios.get('/get_count');
+            const response = await axios.get('http://52.170.43.147:3000/get_count');
+            console.log(response);
             const data = response.data;
             console.log(data);
             this.setState({
@@ -35,6 +36,7 @@ class Count extends Component {
 
     componentDidMount() {
         this.getCount();
+        // console.log(fetch("/get_count"));
     }
 
     render() {

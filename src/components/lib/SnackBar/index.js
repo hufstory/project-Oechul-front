@@ -298,7 +298,7 @@ class SnackBar extends Component {
         actions: [{
             text: 'Click!',
             function: function(){
-                window.location.href = 'https://www.notion.so/2019-7d64b4b8de4c416b9aa32b22580f8e12';
+                window.location.href = 'https://www.notion.so/hufstory/2020-7d64b4b8de4c416b9aa32b22580f8e12';
             }
         }],
         timeout: 40000

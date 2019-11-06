@@ -5,26 +5,50 @@
   position: fixed;
   z-index: 1;
   background-color: #282c34;
-  padding-bottom: 2vh;
+  //padding-bottom: 1vh;
   scroll-behavior: smooth;
 
   .items {
     display: block;
     flex-direction: column;
-    align-items: start;
+    align-items: end;
     justify-content: center;
     color: white;
     margin: 0 auto;
     max-width: 720px;
-    padding: 3vh 0 2vh 0;
+
+    padding: 2vh 0 2vh 0;
 
 
     .title {
-      font-size: 1rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+
+      @include media("<large") {
+        font-size: 1.5rem;
+        padding: 0;
+      }
+      @include media("<medium") {
+        font-size: 1.3rem;
+        padding-left: 3vh;
+      }
     }
 
     .main-nav {
       float: right;
+      height: 100%;
+      padding-top: 0.5vh;
+
+      @include media("<large") {
+        visibility: visible;
+        position: static;
+        z-index: -1;
+      }
+      @include media("<medium") {
+        visibility: collapse;
+        position: fixed;
+        z-index: 2;
+      }
 
       a{
         display: inline-block;
@@ -71,6 +95,8 @@
     @include media("<medium") {
       visibility: hidden;
     }
+
+
 
   }
 }

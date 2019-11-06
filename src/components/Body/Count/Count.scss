@@ -1,30 +1,49 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import '../../../utils';
 
 .count {
   padding: 10vh 0 5vh 0;
-  background-color: #e6e6e6;
-
+  background-color: #F7F7F7;
 
   .title {
     font-size: 2rem;
     text-align: center;
-    padding-bottom: 2vh;
+    padding-bottom: 3vh;
     color: #000000;
     font-family: 'Roboto', sans-serif;
     font-weight:600;
   }
 
-  .box {
-    width: 8rem;
-    height: 5rem;
-    
-
-    .countBox {
-      position: absolute;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
-      background-color: #000;
+  @include media("<medium"){
+    .title{
+      font-size: 1.5rem;
+      text-align: center;
+      padding-bottom: 2vh;
+      color: #000000;
+      font-family: 'Roboto', sans-serif;
+      font-weight:600;
     }
+  }
+
+  .root {
+    margin: 0 0 0 0;
+    padding-right: 5vh;
+    padding-left: 5vh;
+    width: 100%;
+
+    .grid2 {
+      border-right: dashed #282c34;
+    }
+    //
+    //@include media("<medium"){
+    //  .grid2{
+    //    border-right: none;
+    //  }
+    //}
+    //@include media("<large"){
+    //  .grid2 {
+    //    border-right: dashed #282c34;
+    //  }
+    //}
   }
 
 

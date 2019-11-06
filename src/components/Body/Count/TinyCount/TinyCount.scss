@@ -1,0 +1,58 @@
+.tinyCount {
+
+  .title {
+    font-size: 1.5rem;
+    padding: 0;
+    margin-bottom: 3vh;
+  }
+  .grayColor{
+    color: #CCCCCC;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .blackColor{
+    color: #000000;
+    font-size: 1rem;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+  }
+  .gradColor0{
+    background: linear-gradient(to left, #CCCCCC 70%, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .gradColor1{
+    background: linear-gradient(to left, #CCCCCC 60%, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .gradColor2{
+    background: linear-gradient(to left, #CCCCCC 40%, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  .gradColor3{
+    background: linear-gradient(to left, #CCCCCC 30%, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  .gradColor4{
+    background: linear-gradient(to left, #CCCCCC 10%, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+  }
+}

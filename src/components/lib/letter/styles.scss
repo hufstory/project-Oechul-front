@@ -31,15 +31,25 @@ $svg-values: (
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    
+
     animation: fill 0.5s ease forwards 1s;
-    
+
     @each $iter, $stroke-dasharray, $stroke-dashoffset, $animation-delay in $svg-values {
         & path:nth-child(#{$iter}){
             stroke-dasharray: $stroke-dasharray;
             stroke-dashoffset: $stroke-dashoffset;
             animation: line-anim 1s ease forwards $animation-delay;
         }
+    }
+}
+@include media("<large"){
+    #logo {
+        width: 400px;
+    }
+}
+@include media("<medium"){
+    #logo {
+        width: 200px;
     }
 }
 
@@ -84,7 +94,6 @@ $svg-values: (
         left: 27%;
     }
 }
-
 @include media("<large") {
     @keyframes fill{
         from{

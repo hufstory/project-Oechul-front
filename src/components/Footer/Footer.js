@@ -31,7 +31,6 @@ class Footer extends Component {
                 |
                 <a href="https://open.kakao.com/o/sy8CRfKb"> hufstory kakaotalk </a>
                 <p> Copyright © hufstory </p>
-
             </FooterComponent>
         );
     }

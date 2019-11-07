@@ -53,6 +53,17 @@ $svg-values: (
     }
 }
 
+@include media("<large"){
+    #logo {
+        width: 400px;
+    }
+}
+@include media("<medium"){
+    #logo {
+        width: 200px;
+    }
+}
+
 @mixin svg-animation($stroke-dasharray, $stroke-dashoffset, $animation-delay: 0s) {
     stroke-dasharray: $stroke-dasharray;
     stroke-dashoffset: $stroke-dashoffset;

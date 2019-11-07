@@ -89,10 +89,15 @@
       }
     }
 
+    @include media("<large") {
+      visibility: visible;
+    }
+    @include media("<medium") {
+      visibility: hidden;
+    }
 
 
 
   }
-
 }
 
